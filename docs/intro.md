@@ -5,7 +5,7 @@ slug: /
 
 # Band Practice CRM
 
-![Band Practice Logo](/img/band-practice-logo.png)
+![Band Practice Logo](/img/band-practice.logo.bg.png)
 
 Band Practice CRM helps independent musicians deploy tour logistics in an easy, straightforward way. Solving the problems of logistics, scheduling, and communication with clients and venues.
 
