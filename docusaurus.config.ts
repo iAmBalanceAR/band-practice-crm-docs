@@ -33,7 +33,15 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  plugins: [
+    [
+      '@docusaurus/plugin-vercel-analytics',
+      {
+        debug: false, // Set to true to enable debug mode
+        mode: 'auto', // Options: 'auto', 'production', 'development'
+      },
+    ],
+  ],
   presets: [
     [
       'classic',
@@ -166,6 +174,6 @@ const config: Config = {
       darkTheme: prismThemes.github,
     },
   } satisfies Preset.ThemeConfig,
-};
+  };
 
 export default config;
