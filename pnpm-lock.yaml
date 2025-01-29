@@ -11,6 +11,9 @@ importers:
       '@docusaurus/core':
         specifier: 3.7.0
         version: 3.7.0(@mdx-js/react@3.1.0(@types/react@18.2.48)(react@18.0.0))(acorn@8.14.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(typescript@5.6.3)
+      '@docusaurus/plugin-vercel-analytics':
+        specifier: ^3.7.0
+        version: 3.7.0(@mdx-js/react@3.1.0(@types/react@18.2.48)(react@18.0.0))(acorn@8.14.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(typescript@5.6.3)
       '@docusaurus/preset-classic':
         specifier: 3.7.0
         version: 3.7.0(@algolia/client-search@5.19.0)(@mdx-js/react@3.1.0(@types/react@18.2.48)(react@18.0.0))(@types/react@18.2.48)(acorn@8.14.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(search-insights@2.17.3)(typescript@5.6.3)
@@ -20,6 +23,9 @@ importers:
       '@types/react':
         specifier: 18.2.48
         version: 18.2.48
+      '@vercel/analytics':
+        specifier: ^1.4.1
+        version: 1.4.1(react@18.0.0)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1080,6 +1086,13 @@ packages:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
 
+  '@docusaurus/plugin-vercel-analytics@3.7.0':
+    resolution: {integrity: sha512-zEOsqNI3oj4WRO9Dbzsar9fctwAl60PZJqhu14X5W3z5zT/E1TFKrHW/oJHU/a1r5o9K2cFsSNdDn2tyuaFJoQ==, tarball: https://registry.npmjs.org/@docusaurus/plugin-vercel-analytics/-/plugin-vercel-analytics-3.7.0.tgz}
+    engines: {node: '>=18.0'}
+    peerDependencies:
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+
   '@docusaurus/preset-classic@3.7.0':
     resolution: {integrity: sha512-nPHj8AxDLAaQXs+O6+BwILFuhiWbjfQWrdw2tifOClQoNfuXDjfjogee6zfx6NGHWqshR23LrcN115DmkHC91Q==, tarball: https://registry.npmjs.org/@docusaurus/preset-classic/-/preset-classic-3.7.0.tgz}
     engines: {node: '>=18.0'}
@@ -1525,6 +1538,32 @@ packages:
 
   '@ungap/structured-clone@1.2.1':
     resolution: {integrity: sha512-fEzPV3hSkSMltkw152tJKNARhOupqbH96MZWyRjNaYZOMIzbrTeQDG+MTc6Mr2pgzFQzFxAfmhGDNP5QK++2ZA==, tarball: https://registry.npmjs.org/@ungap/structured-clone/-/structured-clone-1.2.1.tgz}
+
+  '@vercel/analytics@1.4.1':
+    resolution: {integrity: sha512-ekpL4ReX2TH3LnrRZTUKjHHNpNy9S1I7QmS+g/RQXoSUQ8ienzosuX7T9djZ/s8zPhBx1mpHP/Rw5875N+zQIQ==, tarball: https://registry.npmjs.org/@vercel/analytics/-/analytics-1.4.1.tgz}
+    peerDependencies:
+      '@remix-run/react': ^2
+      '@sveltejs/kit': ^1 || ^2
+      next: '>= 13'
+      react: ^18 || ^19 || ^19.0.0-rc
+      svelte: '>= 4'
+      vue: ^3
+      vue-router: ^4
+    peerDependenciesMeta:
+      '@remix-run/react':
+        optional: true
+      '@sveltejs/kit':
+        optional: true
+      next:
+        optional: true
+      react:
+        optional: true
+      svelte:
+        optional: true
+      vue:
+        optional: true
+      vue-router:
+        optional: true
 
   '@webassemblyjs/ast@1.14.1':
     resolution: {integrity: sha512-nuBEDgQfm1ccRp/8bCQrx1frohyufl4JlbMMZ4P1wpeOfDhF6FQkxZJ1b/e+PLwr6X1Nhw6OLme5usuBWYBvuQ==, tarball: https://registry.npmjs.org/@webassemblyjs/ast/-/ast-1.14.1.tgz}
@@ -7000,6 +7039,44 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
+  '@docusaurus/plugin-vercel-analytics@3.7.0(@mdx-js/react@3.1.0(@types/react@18.2.48)(react@18.0.0))(acorn@8.14.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(typescript@5.6.3)':
+    dependencies:
+      '@docusaurus/core': 3.7.0(@mdx-js/react@3.1.0(@types/react@18.2.48)(react@18.0.0))(acorn@8.14.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(typescript@5.6.3)
+      '@docusaurus/logger': 3.7.0
+      '@docusaurus/types': 3.7.0(acorn@8.14.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
+      '@docusaurus/utils': 3.7.0(acorn@8.14.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
+      '@docusaurus/utils-validation': 3.7.0(acorn@8.14.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
+      '@vercel/analytics': 1.4.1(react@18.0.0)
+      react: 18.0.0
+      react-dom: 18.0.0(react@18.0.0)
+      tslib: 2.8.1
+    transitivePeerDependencies:
+      - '@docusaurus/faster'
+      - '@mdx-js/react'
+      - '@parcel/css'
+      - '@remix-run/react'
+      - '@rspack/core'
+      - '@sveltejs/kit'
+      - '@swc/core'
+      - '@swc/css'
+      - acorn
+      - bufferutil
+      - csso
+      - debug
+      - esbuild
+      - eslint
+      - lightningcss
+      - next
+      - supports-color
+      - svelte
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue
+      - vue-router
+      - vue-template-compiler
+      - webpack-cli
+
   '@docusaurus/preset-classic@3.7.0(@algolia/client-search@5.19.0)(@mdx-js/react@3.1.0(@types/react@18.2.48)(react@18.0.0))(@types/react@18.2.48)(acorn@8.14.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(search-insights@2.17.3)(typescript@5.6.3)':
     dependencies:
       '@docusaurus/core': 3.7.0(@mdx-js/react@3.1.0(@types/react@18.2.48)(react@18.0.0))(acorn@8.14.0)(react-dom@18.0.0(react@18.0.0))(react@18.0.0)(typescript@5.6.3)
@@ -7725,6 +7802,10 @@ snapshots:
       '@types/yargs-parser': 21.0.3
 
   '@ungap/structured-clone@1.2.1': {}
+
+  '@vercel/analytics@1.4.1(react@18.0.0)':
+    optionalDependencies:
+      react: 18.0.0
 
   '@webassemblyjs/ast@1.14.1':
     dependencies:
